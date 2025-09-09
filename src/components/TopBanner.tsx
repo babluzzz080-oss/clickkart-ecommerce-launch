@@ -46,15 +46,18 @@ const TopBanner = () => {
 
   return (
     <div className="w-full">
-      <div className={`${banners[currentBanner].bg} text-white py-3 px-4 text-center transition-all duration-500`}>
+      <div className={`${banners[currentBanner].bg} text-white py-12 px-4 text-center transition-all duration-500 min-h-[200px] flex items-center`}>
         <div className="container mx-auto">
-          <div className="flex items-center justify-center space-x-2">
-            <span className="font-bold text-sm md:text-base">
+          <div className="space-y-4">
+            <h2 className="text-3xl md:text-5xl font-bold">
               {banners[currentBanner].title}
-            </span>
-            <span className="text-xs md:text-sm opacity-90">
-              - {banners[currentBanner].subtitle}
-            </span>
+            </h2>
+            <p className="text-lg md:text-2xl opacity-90">
+              {banners[currentBanner].subtitle}
+            </p>
+            <button className="bg-white text-gray-800 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors mt-6">
+              Shop Now
+            </button>
           </div>
         </div>
       </div>
