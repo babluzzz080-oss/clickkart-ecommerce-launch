@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import TopBanner from "@/components/TopBanner";
 import HeroSection from "@/components/HeroSection";
 import CategoryGrid from "@/components/CategoryGrid";
 import ProductSection from "@/components/ProductSection";
@@ -8,6 +9,7 @@ import { featuredProducts, flashDeals } from "@/data/products";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <TopBanner />
       <Header />
       <main>
         <HeroSection />
